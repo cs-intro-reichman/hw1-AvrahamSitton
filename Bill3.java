@@ -9,6 +9,6 @@ public class Bill3 {
 
 		double result = Math.ceil(totalBill / 3.0);
         System.out.println("Dear " + name3 + ", " + name2 + ", " + 
-		"and " + name1 + ": pay " + result + " Shekels eatch.");
+		"and " + name1 + ": pay " + result + " Shekels each.");
 	}
 }
