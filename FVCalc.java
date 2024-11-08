@@ -4,11 +4,11 @@ public class FVCalc {
 		int currentValue = Integer.parseInt(args[0]);
 		int rate = Integer.parseInt(args[1]);
         int years = Integer.parseInt(args[2]);
-
+        double converted = (double) rate; // המרה מפורשת
 		double futureValue = currentValue * Math.pow((1 + rate) , years);
 		int futureInt = (int) futureValue;
 		System.out.println("After " + years + " years, a $" + 
-		currentValue + " saved at " + rate + "% will yield $" + futureInt);
+		currentValue + " saved at " + rate + "%25 will yield $" + futureInt / 100);
 
 	}
 }
