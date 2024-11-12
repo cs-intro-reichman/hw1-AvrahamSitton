@@ -5,7 +5,7 @@ public class TimeFormat {
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 			if (hours > 12){
-              System.out.print(hours + ":" + minutes + " PM");
+              System.out.print(hours - 12  + ":" + minutes + " PM");
 		}   else {
 			  System.out.print(hours + ":" + minutes + " AM");
 
