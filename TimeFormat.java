@@ -5,15 +5,15 @@ public class TimeFormat {
 		int hours = Integer.parseInt("" + args[0].charAt(0) + args[0].charAt(1));
 		int minutes = Integer.parseInt("" + args[0].charAt(3) + args[0].charAt(4));
 			if (hours == 0 ){
-              System.out.print("12:" + minutes + " AM");
+              System.out.print(hours + args[0].charAt(3) + args[0].charAt(4) + " AM");
 		    }else if( hours < 10 ){
-				System.out.print(args[0].charAt(1) + ":" + minutes + " AM");
+				System.out.print(args[0].charAt(1) + ":" + args[0].charAt(3) + args[0].charAt(4) + " AM");
 			}else if(hours < 12 ){
-			  System.out.print(hours + ":" + minutes + " AM");
+			  System.out.print(hours + ":" + args[0].charAt(3) + args[0].charAt(4) + " AM");
 			}else { if (hours == 12){
-				System.out.print("12:" + minutes + " PM");
+				System.out.print("12:" + args[0].charAt(3) + args[0].charAt(4) + " PM");
 			}else { if(hours < 24 ){
-				System.out.print(hours - 12 + ":" + minutes + " PM");
+				System.out.print(hours - 12 + ":" + args[0].charAt(3) + args[0].charAt(4) + " PM");
 		
              
 			  }
